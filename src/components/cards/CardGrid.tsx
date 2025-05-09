@@ -5,7 +5,7 @@ import Link from "next/link";
 export function CardGrid({ cards }: { cards: Card[] }) {
   return (
     <div className="justify-center flex w-full mx-auto">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {cards.map((card) => (
           <Link
             key={`${card.setCode}-${card.cardNumber}`}

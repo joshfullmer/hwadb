@@ -64,7 +64,7 @@ export default async function CardPage({
     : undefined;
 
   return (
-    <main className="flex justify-center mx-auto max-w-9/10 w-full gap-8">
+    <main className="flex flex-col md:flex-row justify-center mx-auto max-w-9/10 w-full gap-8">
       <Image
         src={`/cards/${setCode}/${cardNumber}.webp`}
         alt=""
@@ -72,14 +72,14 @@ export default async function CardPage({
         height="100"
       />
 
-      <div className="flex flex-col gap-4 max-w-1/3 w-full">
+      <div className="flex flex-col gap-4 md:max-w-1/3 w-full">
         <div className="flex justify-between">
           <div>
             {prevHref != null && (
               <Button asChild variant="outline">
                 <Link href={prevHref}>
                   <ChevronLeft />
-                  {prev?.name}
+                  <span className="hidden md:inline">{prev?.name}</span>
                 </Link>
               </Button>
             )}
@@ -89,7 +89,7 @@ export default async function CardPage({
             {nextHref != null && (
               <Button asChild variant="outline">
                 <Link href={nextHref}>
-                  {next?.name}
+                  <span className="hidden md:inline">{next?.name}</span>
                   <ChevronRight />
                 </Link>
               </Button>
