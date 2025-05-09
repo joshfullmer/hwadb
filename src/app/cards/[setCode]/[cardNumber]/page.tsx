@@ -6,7 +6,7 @@ import {
   CardNumberRouteSchema,
   SetCodeRouteSchema,
 } from "@/schemas/route.schema";
-import { Brush } from "lucide-react";
+import { Brush, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -77,7 +77,10 @@ export default async function CardPage({
           <div>
             {prevHref != null && (
               <Button asChild variant="outline">
-                <Link href={prevHref}>{prev?.name}</Link>
+                <Link href={prevHref}>
+                  <ChevronLeft />
+                  {prev?.name}
+                </Link>
               </Button>
             )}
           </div>
@@ -85,7 +88,10 @@ export default async function CardPage({
           <div>
             {nextHref != null && (
               <Button asChild variant="outline">
-                <Link href={nextHref}>{next?.name}</Link>
+                <Link href={nextHref}>
+                  {next?.name}
+                  <ChevronRight />
+                </Link>
               </Button>
             )}
           </div>
