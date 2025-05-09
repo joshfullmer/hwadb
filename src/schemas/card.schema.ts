@@ -69,6 +69,7 @@ export const CardSchema = z.discriminatedUnion("type", [
   SourceCardSchema,
   MomentCardSchema,
 ]);
+export type Card = z.infer<typeof CardSchema>;
 
 export const CardDataSchema = z.object({
   cards: z.array(CardSchema),
