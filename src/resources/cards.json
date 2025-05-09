@@ -11,7 +11,9 @@
       "traits": ["Enforcer"],
       "maxCards": 5,
       "maxShards": 10,
-      "ability": "{cost}{reaction} After you complete a breach on a player's Archives, exhaust this card and archive the top card of your commons:{/cost} Archive 1 card at random from that player's Council.",
+      "ability": [
+        "{cost}{reaction} After you complete a breach on a player's Archives, exhaust this card and archive the top card of your commons:{/cost} Archive 1 card at random from that player's Council."
+      ],
       "faction": "collective",
       "affiliation": 1,
       "artist": "Evan Simonet"
@@ -21,13 +23,15 @@
       "setCode": "PRCO",
       "unique": true,
       "name": "Chairman Bo Pax",
-      "title": "Heir to Pax Industries",
-      "collectionIcons": ["card"],
+      "title": "Heir of Pax Industries",
+      "collectionIcons": ["draw"],
       "type": "seeker",
       "traits": ["Visionary"],
       "maxCards": 5,
       "maxShards": 10,
-      "ability": "{cost}{action} If you have more cards in your front row than your rival, exhaust this card:{/cost} They gain 1{heat}.",
+      "ability": [
+        "{cost}{action} If you have more cards in your front row than your rival, exhaust this card:{/cost} They gain 1{heat}."
+      ],
       "faction": "oldAidalon",
       "affiliation": 1,
       "artist": "Evan Simonet"
@@ -43,7 +47,9 @@
       "traits": ["Renegade"],
       "maxCards": 5,
       "maxShards": 10,
-      "ability": "{cost}{action} If you have fewer {heat} in your pool than your rival, exhaust this card:{/cost} Gain 3{shard}.",
+      "ability": [
+        "{cost}{action} If you have fewer {heat} in your pool than your rival, exhaust this card:{/cost} Gain 3{shard}."
+      ],
       "faction": "omniworks",
       "affiliation": 1,
       "artist": "Evan Simonet"
@@ -54,12 +60,14 @@
       "unique": true,
       "name": "Jayko & Ace",
       "title": "Boisterous Troublemakers",
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "seeker",
       "traits": ["Renegade"],
       "maxCards": 5,
       "maxShards": 10,
-      "ability": "{cost}{reaction} As you approach a district, exhaust this card and gain 1{head}:{/cost} Gain 2{shard} and draw 1 card.",
+      "ability": [
+        "{cost}{reaction} As you approach a district, exhaust this card and gain 1{heat}:{/cost} Gain 2{shard} and draw 1 card."
+      ],
       "faction": "remnants",
       "affiliation": 1,
       "artist": "Evan Simonet"
@@ -74,7 +82,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Enforcer"],
-      "ability": "{cost}{reaction} As a player engages one of your agents, obstacles, or sources, exhaust this card and exile 1 card from your Archives:{/cost} The engaged card gets +3{presence} until the engagement ends.",
+      "ability": [
+        "{cost}{reaction} As a player engages one of your agents, obstacles, or sources, exhaust this card and exile 1 card from your Archives:{/cost} The engaged card gets +3{presence} until the engagement ends."
+      ],
       "barrier": 3,
       "presence": 2,
       "faction": "collective",
@@ -90,7 +100,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Paragon"],
-      "ability": "{cost}While this card is forged:{/cost} Each card in your rival's grid gets +1 shard cost.",
+      "ability": [
+        "{cost}While this card is forged:{/cost} Each card in your rival's grid gets +1 shard cost."
+      ],
       "barrier": 4,
       "cipher": "Engaging player exiles any number of cards with a total shard cost of 3 or more from their Council.",
       "presence": 1,
@@ -103,11 +115,14 @@
       "unique": true,
       "name": "Doctor Twilight",
       "title": "Dream Surgeon",
-      "cost": 3,
-      "collectionIcons": ["card"],
+      "cost": 4,
+      "collectionIcons": ["draw"],
       "type": "agent",
       "traits": ["Visionary"],
-      "ability": "{cost}{instant} Exhaust this card and exile 1 card from your Archives:{/cost} Gain 3{shard}.",
+      "ability": [
+        "{cost}{instant} Exhaust this card and exile 1 card from your Archives:{/cost} Gain 3{shard}.",
+        "{cost}{discover}:{/cost} Add 1 card from your Exile to your Archives {reminder}(of your choice){/reminder}."
+      ],
       "barrier": 3,
       "presence": 3,
       "faction": "collective",
@@ -123,7 +138,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Renegade"],
-      "ability": "{cost}{reaction} After you complete a breach on a player's Archives, exhaust this card:{/cost} Archive the top 2 cards of their Commons.",
+      "ability": [
+        "{cost}{reaction} After you complete a breach on a player's Archives, exhaust this card:{/cost} Archive the top 2 cards of their Commons."
+      ],
       "barrier": 3,
       "cipher": "Engaging player exhausts a card in their Archives path.",
       "presence": 1,
@@ -140,8 +157,10 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Enforcer"],
-      "ability": "{cost}{instant} Exhaust this card:{/cost} Unexhaust your seeker.",
-      "barrier": 4,
+      "ability": [
+        "{cost}{instant} Exhaust this card:{/cost} Unexhaust your seeker."
+      ],
+      "barrier": 3,
       "cipher": "Engaging player exhausts their seeker.",
       "presence": 1,
       "faction": "oldAidalon",
@@ -176,7 +195,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Enforcer"],
-      "ability": "{cost}{reaction} After a card is archived or exiled from a grid, exhaust this card and choose a player:{/cost} That player exhausts a card in the front row of their grid.",
+      "ability": [
+        "{cost}{reaction} After a card is archived or exiled from a grid, exhaust this card and choose a player:{/cost} That player exhausts a card in the front row of their grid."
+      ],
       "barrier": 4,
       "presence": 2,
       "faction": "oldAidalon",
@@ -189,10 +210,12 @@
       "name": "Ulin Marr",
       "title": "Eccentric Architect",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "agent",
       "traits": ["Visionary"],
-      "ability": "{cost}{action} Exhaust this card:{/cost} Stage up to 2 cards {reminder}(you can stage agents, obstacles, and sources){/reminder}.",
+      "ability": [
+        "{cost}{action} Exhaust this card:{/cost} Stage up to 2 cards {reminder}(you can stage agents, obstacles, and sources){/reminder}."
+      ],
       "barrier": 4,
       "cipher": "Engaging player exhausts a card in their front row.",
       "presence": 1,
@@ -209,7 +232,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Paragon"],
-      "ability": "{cost}{reaction} After this card is forged, choose a player:{/cost} They draw 3 cards.",
+      "ability": [
+        "{cost}{instant} Exhaust this card and choose a player:{/cost} They draw 1 card."
+      ],
       "barrier": 3,
       "cipher": "Engaging player loses {action}.",
       "presence": 2,
@@ -223,7 +248,7 @@
       "name": "Big Varna Gorvis",
       "title": "Friends in Every District",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "agent",
       "traits": ["Paragon"],
       "ability": [
@@ -231,7 +256,6 @@
         "{cost}{discover} If you have more cards in your Council than engaging player: {/cost} Archive 1 card at random from their Council."
       ],
       "barrier": 3,
-      "cipher": "Engaging player loses {action}.",
       "presence": 2,
       "faction": "omniworks",
       "artist": "NONE"
@@ -265,7 +289,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Paragon"],
-      "ability": "{cost}While this card is forged:{/cost} Each other card in your grid gets -1 shard cost.",
+      "ability": [
+        "{cost}While this card is forged:{/cost} Each other card in your grid gets -1 shard cost."
+      ],
       "barrier": 4,
       "cipher": "Engaging player exhausts a card in their Council path.",
       "presence": 1,
@@ -279,7 +305,7 @@
       "name": "Recruiter Nilero",
       "title": "Effusive Inducer",
       "cost": 3,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "agent",
       "traits": ["Visionary"],
       "ability": [
@@ -301,7 +327,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Renegade"],
-      "ability": "{cost}{instant} Exhaust this card and lose 2{shard}:{/cost} Shift this card.",
+      "ability": [
+        "{cost}{instant} Exhaust this card and lose 2{shard}:{/cost} Shift this card."
+      ],
       "barrier": 3,
       "presence": 2,
       "faction": "omniworks",
@@ -314,7 +342,7 @@
       "name": "\"Spider\" Rebbek",
       "title": "Dragon's Hoard Pitboss",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "agent",
       "traits": ["Enforcer"],
       "ability": [
@@ -333,7 +361,7 @@
       "name": "Kryzar the Rat",
       "title": "Navigator of the Cortex Maze",
       "cost": 5,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "agent",
       "traits": ["Enforcer"],
       "ability": [
@@ -355,7 +383,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Visionary"],
-      "ability": "{cost}{reaction} As you approach a district, exhaust this card:{/cost} Stage 1 card {reminder}(you can stage agents, obstacles, and sources){/reminder}.",
+      "ability": [
+        "{cost}{reaction} As you approach a district, exhaust this card:{/cost} Stage 1 card {reminder}(you can stage agents, obstacles, and sources){/reminder}."
+      ],
       "barrier": 4,
       "cipher": "Engaging player steals 1{heat} from your pool {reminder}(to their pool){/reminder}.",
       "presence": 1,
@@ -372,7 +402,9 @@
       "collectionIcons": ["shard"],
       "type": "agent",
       "traits": ["Renegade"],
-      "ability": "{cost}{instant} Exhaust this card and lost 1{shard}:{/cost} Swap two other cards in your grid.",
+      "ability": [
+        "{cost}{instant} Exhaust this card and lost 1{shard}:{/cost} Swap two other cards in your grid."
+      ],
       "barrier": 3,
       "cipher": "Engaging player swaps a card in their front row with a card in their back row.",
       "presence": 1,
@@ -387,13 +419,13 @@
       "type": "obstacle",
       "traits": ["Location"],
       "ability": [
-        "{encounter}: Engaging player may exhaust a forged card in their grid. If they do not, gain 2{shard}.",
+        "{confront}: Engaging player may exhaust a forged card in their grid. If they do not, gain 2{shard}.",
         "{discover}: Gain 1{shard}."
       ],
       "barrier": 1,
       "presence": 4,
       "faction": "collective",
-      "affiliation": 0,
+      "affiliation": 1,
       "artist": "Evan Simonet"
     },
     {
@@ -403,7 +435,9 @@
       "cost": 0,
       "type": "obstacle",
       "traits": ["Contraption"],
-      "ability": "{cost}{discover} If this card is in your grid:{/cost} Archive the bottom 4 cards of engaging player's Commons.",
+      "ability": [
+        "{cost}{discover} If this card is in your grid:{/cost} Archive the bottom 4 cards of engaging player's Commons."
+      ],
       "barrier": 0,
       "presence": 4,
       "faction": "collective",
@@ -418,7 +452,7 @@
       "type": "obstacle",
       "traits": ["Persona"],
       "ability": [
-        "{cost}{encounter} Lose 1{shard}:{/cost} Archive 1 card at random from engaging player's Council.",
+        "{cost}{confront} Lose 1{shard}:{/cost} Archive 1 card at random from engaging player's Council.",
         "{cost}{discover} If this card is in your grid, archive it:{/cost} Archive 2 cards at random from engaging player's council."
       ],
       "barrier": 3,
@@ -442,7 +476,7 @@
       "presence": 1,
       "faction": "oldAidalon",
       "affiliation": 2,
-      "artist": "Evan Simonet"
+      "artist": "Banner & Simonet"
     },
     {
       "cardNumber": "048",
@@ -468,7 +502,9 @@
       "cost": 3,
       "type": "obstacle",
       "traits": ["Location"],
-      "ability": "{encounter}: Engaging player shuffles 1 card from their grid into their Commons.",
+      "ability": [
+        "{confront}: Engaging player shuffles 1 card from their grid into their Commons."
+      ],
       "barrier": 1,
       "cipher": "Engaging player exhausts a card in their front row.",
       "presence": 4,
@@ -483,7 +519,9 @@
       "cost": 1,
       "type": "obstacle",
       "traits": ["Location"],
-      "ability": "{cost}{reaction} After this card is forged during a delve:{/cost} This card gets +2{barrier} until the delve ends.",
+      "ability": [
+        "{cost}{reaction} After this card is forged during a delve:{/cost} This card gets +2{barrier} until the delve ends."
+      ],
       "barrier": 1,
       "presence": 3,
       "faction": "omniworks",
@@ -497,7 +535,9 @@
       "cost": 0,
       "type": "obstacle",
       "traits": ["Contraption"],
-      "ability": "{cost}{reaction} After this card is forged:{/cost} Shift it.",
+      "ability": [
+        "{cost}{reaction} After this card is forged:{/cost} Shift it."
+      ],
       "barrier": 1,
       "presence": 3,
       "faction": "omniworks",
@@ -512,7 +552,7 @@
       "type": "obstacle",
       "traits": ["Location"],
       "ability": [
-        "{cost}{encounter} Choose a player:{/cost} Shift an unforged card in their grid.",
+        "{cost}{confront} Choose a player:{/cost} Shift an unforged card in their grid.",
         "{cost}{discover} If this card is in your grid, choose a player:{/cost} Shift a card in their grid {reminder}(forged or unforged){/reminder}."
       ],
       "barrier": 2,
@@ -530,7 +570,7 @@
       "traits": ["Being", "Persona"],
       "ability": [
         "Refund 1. {reminder}(As this card's {presence} is broken, gain 1{shard}.){/reminder}",
-        "{cost}{encounter} Lose 1{shard}:{/cost} Lose 1{heat}."
+        "{cost}{confront} Lose 1{shard}:{/cost} Lose 1{heat}."
       ],
       "barrier": 1,
       "presence": 2,
@@ -580,12 +620,12 @@
       "type": "obstacle",
       "traits": ["Being"],
       "ability": [
-        "{cost}{encounter} Gain 1{heat}:{/cost} Engaging player gains 1{heat}.",
+        "{cost}{confront} Gain 1{heat}:{/cost} Engaging player gains 1{heat}.",
         "{cost}{discover} If this card is in your grid, archive it:{/cost} Engaging player gains 2{heat}."
       ],
       "barrier": 1,
       "presence": 3,
-      "faction": "omniworks",
+      "faction": "remnants",
       "affiliation": 1,
       "artist": "NONE"
     },
@@ -597,12 +637,12 @@
       "type": "obstacle",
       "traits": ["Location"],
       "ability": [
-        "{cost}{encounter} If you have 2{heat} or more in your pool:{/cost} Steal 1{shard} from engaging player's pool.",
+        "{cost}{confront} If you have 2{heat} or more in your pool:{/cost} Steal 1{shard} from engaging player's pool.",
         "{cost}{discover} If you have 2{heat} or more in your pool:{/cost} Steal 1{shard} from engaging player's pool."
       ],
       "barrier": 1,
       "presence": 3,
-      "faction": "omniworks",
+      "faction": "remnants",
       "affiliation": 5,
       "artist": "NONE"
     },
@@ -610,14 +650,17 @@
       "cardNumber": "077",
       "setCode": "PRCO",
       "name": "Capricious Informant",
-      "cost": 3,
+      "cost": 2,
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Persona"],
-      "ability": "{cost}{instant} Exhaust this card and look at the top 2 cards of your Commons:{/cost} Add 1 of those to your Council and archive the other.",
-      "presence": 4,
+      "ability": [
+        "Refund 1. {reminder}(As this card's {presence} is broken, gain 1{shard}.){/reminder}",
+        "{cost}While this card is forged:{/cost} Each agent and obstacle in your rival's front row gets -1{barrier}."
+      ],
+      "presence": 2,
       "faction": "collective",
-      "affiliation": 0,
+      "affiliation": 1,
       "artist": "Brantseg & Simonet"
     },
     {
@@ -627,7 +670,9 @@
       "cost": 1,
       "type": "source",
       "traits": ["Persona"],
-      "ability": "{cost}{instant} Exhaust this card:{/cost} Draw 2 cards. Archive 1 card from your Council.",
+      "ability": [
+        "{cost}{instant} Exhaust this card:{/cost} Draw 2 cards. Archive 1 card from your Council."
+      ],
       "presence": 5,
       "faction": "collective",
       "affiliation": 2,
@@ -641,7 +686,9 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Contraption"],
-      "ability": "{cost}{reaction} After you complete a breach on a district, exhaust this card:{/cost} Shuffle 1 card from your Archives into your Commons {reminder}(of your choice){/reminder}. Draw 1 card.",
+      "ability": [
+        "{cost}{reaction} After you complete a breach on a district, exhaust this card:{/cost} Shuffle 1 card from your Archives into your Commons {reminder}(of your choice){/reminder}. Draw 1 card."
+      ],
       "presence": 3,
       "faction": "collective",
       "affiliation": 3,
@@ -655,7 +702,9 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Contraption"],
-      "ability": "{cost}{reaction} As a player confronts an adjacent card, exhaust this card:{/cost} Redirect that player to confront this card.",
+      "ability": [
+        "{cost}{reaction} As a player confronts an adjacent card, exhaust this card:{/cost} Redirect that player to confront this card."
+      ],
       "cipher": "Engaging player archives 1 card from their Council.",
       "presence": 3,
       "faction": "collective",
@@ -667,10 +716,12 @@
       "setCode": "PRCO",
       "name": "Echopomp Revoker",
       "cost": 3,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "source",
       "traits": ["Persona"],
-      "ability": "{cost}{instant} During a delve, exhaust this card and exile 2 cards from your Archives:{/cost} End the delve.",
+      "ability": [
+        "{cost}{instant} During a delve, exhaust this card and exile 2 cards from your Archives:{/cost} End the delve."
+      ],
       "presence": 6,
       "faction": "collective",
       "affiliation": 5,
@@ -684,7 +735,9 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Persona"],
-      "ability": "{cost}{reaction} As you confront a card, exhaust this card:{/cost} That card gets -2{barrier} until the confrontation ends.",
+      "ability": [
+        "{cost}{reaction} As you confront a card, exhaust this card:{/cost} That card gets -2{barrier} until the confrontation ends."
+      ],
       "presence": 2,
       "faction": "oldAidalon",
       "affiliation": 1,
@@ -695,7 +748,7 @@
       "setCode": "PRCO",
       "name": "Bubblemap Kiosk",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "source",
       "traits": ["Contraption"],
       "ability": [
@@ -716,7 +769,7 @@
       "type": "source",
       "traits": ["Location"],
       "ability": [
-        "Cache 1. {reminder}(As this is forged, place 2{shard} here.){/reminder}",
+        "Cache 2. {reminder}(As this is forged, place 2{shard} here.){/reminder}",
         "{cost}{reaction} As the round begins, remove 1{shard} from here:{/cost} Gain 1{shard}."
       ],
       "presence": 2,
@@ -747,10 +800,12 @@
       "unique": true,
       "name": "Pax Observatory",
       "cost": 6,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "source",
       "traits": ["Location"],
-      "ability": "{cost}{reaction} As you refill {action} during the refresh phase:{/cost} Increase the number you refill to by 1.",
+      "ability": [
+        "{cost}{reaction} As you refill {action} during the refresh phase:{/cost} Increase the number you refill to by 1."
+      ],
       "cipher": "Engaging player exiles 1 card from their grid.",
       "presence": 6,
       "faction": "oldAidalon",
@@ -765,7 +820,9 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Location"],
-      "ability": "{cost}While you have fewer {heat} in your pool than your rival:{/cost} This card gets +4{presence}.",
+      "ability": [
+        "{cost}While you have fewer {heat} in your pool than your rival:{/cost} This card gets +4{presence}."
+      ],
       "presence": 2,
       "faction": "omniworks",
       "affiliation": 1,
@@ -779,10 +836,12 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Contraption"],
-      "ability": "{cost}{reaction} After this card is forged, choose another player:{/cost} Look at the top card of their Commons. You may add that card to the bottom of their Commons.",
+      "ability": [
+        "{cost}{reaction} After this card is forged, choose another player:{/cost} Look at the top card of their Commons. You may add that card to the bottom of their Commons."
+      ],
       "presence": 3,
       "faction": "omniworks",
-      "affiliation": 3,
+      "affiliation": 2,
       "artist": "NONE"
     },
     {
@@ -790,7 +849,7 @@
       "setCode": "PRCO",
       "name": "Job Board",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "source",
       "traits": ["Location"],
       "ability": [
@@ -810,7 +869,9 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Location"],
-      "ability": "{cost}{reaction} After this card is forged:{/cost} Lose 1{heat}.",
+      "ability": [
+        "{cost}{reaction} After this card is forged:{/cost} Lose 1{heat}."
+      ],
       "presence": 4,
       "faction": "omniworks",
       "affiliation": 3,
@@ -821,13 +882,15 @@
       "setCode": "PRCO",
       "name": "Tele-Mail Cluster",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "source",
       "traits": ["Contraption"],
-      "ability": "{cost}{reaction} After this card is forged:{/cost} Stage 1 card {reminder}(you can stage agents, obstacles, and sources){/reminder}.",
+      "ability": [
+        "{cost}{reaction} After this card is forged:{/cost} Stage 1 card {reminder}(you can stage agents, obstacles, and sources){/reminder}."
+      ],
       "presence": 4,
       "faction": "omniworks",
-      "affiliation": 0,
+      "affiliation": 4,
       "artist": "Evan Simonet"
     },
     {
@@ -854,7 +917,9 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Location"],
-      "ability": "{cost}While this card is forged:{/cost} Each adjacent card gets +1{presence} {reminder}(forged or unforged){/reminder}.",
+      "ability": [
+        "{cost}While this card is forged:{/cost} Each adjacent card gets +1{presence} {reminder}(forged or unforged){/reminder}."
+      ],
       "presence": 3,
       "faction": "remnants",
       "affiliation": 1,
@@ -865,10 +930,12 @@
       "setCode": "PRCO",
       "name": "Silkline Shuttle",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "source",
       "traits": ["Contraption"],
-      "ability": "{cost}{reaction} After this card is forged:{/cost} Swap it with another card in your grid.",
+      "ability": [
+        "{cost}{reaction} After this card is forged:{/cost} Swap it with another card in your grid."
+      ],
       "presence": 4,
       "faction": "remnants",
       "affiliation": 2,
@@ -895,10 +962,12 @@
       "setCode": "PRCO",
       "name": "Marauder's Market",
       "cost": 2,
-      "collectionIcons": ["card"],
+      "collectionIcons": ["draw"],
       "type": "source",
       "traits": ["Location"],
-      "ability": "{cost}{instant} If you have 2{heat} or more in your pool, exhaust this card:{/cost} Gain 2{shard}.",
+      "ability": [
+        "{cost}{instant} If you have 2{heat} or more in your pool, exhaust this card:{/cost} Gain 2{shard}."
+      ],
       "presence": 3,
       "faction": "remnants",
       "affiliation": 3,
@@ -912,7 +981,9 @@
       "collectionIcons": ["shard"],
       "type": "source",
       "traits": ["Contraption"],
-      "ability": "{cost}{reaction} As you approach a grid slot, if you have 3 or fewer cards in your Council, exhaust this card:{/cost} Redirect your delve to approach a grid slot adjacent to your current position.",
+      "ability": [
+        "{cost}{reaction} As you approach a grid slot, if you have 3 or fewer cards in your Council, exhaust this card:{/cost} Redirect your delve to approach a grid slot adjacent to your current position."
+      ],
       "presence": 3,
       "faction": "remnants",
       "affiliation": 5,
@@ -925,7 +996,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Subterfuge", "Tactic"],
-      "ability": "{cost}{reaction} After a player completes an encounter with an unforged card in your grid:{/cost} They may discover that card. If they do not, archive the top 2 cards of their Commons.",
+      "ability": [
+        "{cost}{reaction} After a player completes an encounter with an unforged card in your grid:{/cost} They may discover that card. If they do not, archive the top 2 cards of their Commons."
+      ],
       "faction": "collective",
       "affiliation": 0,
       "artist": "Banner & Simonet"
@@ -937,7 +1010,9 @@
       "cost": 2,
       "type": "moment",
       "traits": ["Subterfuge", "Tactic"],
-      "ability": "{cost}{reaction} After you complete a breach on a player's Archives:{/cost} Discover 1 card in their Council.",
+      "ability": [
+        "{cost}{reaction} After you complete a breach on a player's Archives:{/cost} Discover 1 card in their Council."
+      ],
       "faction": "collective",
       "affiliation": 3,
       "artist": "NONE"
@@ -949,7 +1024,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Subterfuge"],
-      "ability": "{cost}{instant} Archive the top 2 cards of your Commons:{/cost} Gain 2{shard}.",
+      "ability": [
+        "{cost}{instant} Archive the top 2 cards of your Commons:{/cost} Gain 2{shard}."
+      ],
       "faction": "collective",
       "affiliation": 4,
       "artist": "NONE"
@@ -961,7 +1038,9 @@
       "cost": 1,
       "type": "moment",
       "traits": ["Subterfuge"],
-      "ability": "{cost}{reaction} After you resolve a {discover} ability:{/cost} Resolve that ability again.",
+      "ability": [
+        "{cost}{reaction} After you resolve a {discover} ability:{/cost} Resolve that ability again."
+      ],
       "faction": "collective",
       "affiliation": 4,
       "artist": "NONE"
@@ -973,7 +1052,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Influence", "Subterfuge"],
-      "ability": "{cost}{action} Show another player an agent in your Council or Archives:{/cost} Gain 4{shard}.",
+      "ability": [
+        "{cost}{action} Show another player an agent in your Council or Archives:{/cost} Gain 4{shard}."
+      ],
       "faction": "collective",
       "affiliation": 5,
       "artist": "NONE"
@@ -985,7 +1066,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Tactic"],
-      "ability": "{cost}{reaction} As a player confronts an obstacle in your grid:{/cost} That obstacle gets +3{barrier} until the confrontation ends.",
+      "ability": [
+        "{cost}{reaction} As a player confronts an obstacle in your grid:{/cost} That obstacle gets +3{barrier} until the confrontation ends."
+      ],
       "faction": "oldAidalon",
       "affiliation": 1,
       "artist": "NONE"
@@ -997,7 +1080,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Commerce"],
-      "ability": "{cost}{reaction} After you complete a breach on a Commons:{/cost} Gain 3{shard}.",
+      "ability": [
+        "{cost}{reaction} After you complete a breach on a Commons:{/cost} Gain 3{shard}."
+      ],
       "faction": "oldAidalon",
       "affiliation": 2,
       "artist": "NONE"
@@ -1009,7 +1094,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Commerce", "Influence"],
-      "ability": "{cost}{action} Exhaust a card in your front row:{/cost} Gain 4{shard}.",
+      "ability": [
+        "{cost}{action} Exhaust a card in your front row:{/cost} Gain 4{shard}."
+      ],
       "faction": "oldAidalon",
       "affiliation": 3,
       "artist": "NONE"
@@ -1021,7 +1108,9 @@
       "cost": 1,
       "type": "moment",
       "traits": ["Influence"],
-      "ability": "{cost}{action}:{/cost} Stage up to 3 cards {reminder}(you can stage agents, obstacles, and sources){/reminder}.",
+      "ability": [
+        "{cost}{action}:{/cost} Stage up to 3 cards {reminder}(you can stage agents, obstacles, and sources){/reminder}."
+      ],
       "faction": "oldAidalon",
       "affiliation": 4,
       "artist": "NONE"
@@ -1033,7 +1122,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Influence"],
-      "ability": "{cost}{action}:{/cost} Search your Commons for a source, show it to another player, and stage it. {reminder}(Shuffle.){/reminder}",
+      "ability": [
+        "{cost}{action}:{/cost} Search your Commons for a source, show it to another player, and stage it. {reminder}(Shuffle.){/reminder}"
+      ],
       "faction": "oldAidalon",
       "affiliation": 5,
       "artist": "NONE"
@@ -1045,7 +1136,9 @@
       "cost": 3,
       "type": "moment",
       "traits": ["Tactic"],
-      "ability": "{cost}{reaction} As you approach a forged card, exhaust a forged card with 4{barrier} or more in your grid:{/cost} Archive the approached card.",
+      "ability": [
+        "{cost}{reaction} As you approach a forged card, exhaust a forged card with 4{barrier} or more in your grid:{/cost} Archive the approached card."
+      ],
       "faction": "oldAidalon",
       "affiliation": 6,
       "artist": "NONE"
@@ -1057,7 +1150,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Subterfuge"],
-      "ability": "{cost}{action} Choose a player:{/cost} They lose 1{heat} and draw 1 card.",
+      "ability": [
+        "{cost}{action} Choose a player:{/cost} They lose 1{heat} and draw 1 card."
+      ],
       "faction": "omniworks",
       "affiliation": 1,
       "artist": "NONE"
@@ -1069,7 +1164,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Knowledge"],
-      "ability": "{cost}{instant} Unforge a card in your grid:{/cost} Draw 1 card.",
+      "ability": [
+        "{cost}{instant} Unforge a card in your grid:{/cost} Draw 1 card."
+      ],
       "faction": "omniworks",
       "affiliation": 1,
       "artist": "NONE"
@@ -1081,7 +1178,7 @@
       "cost": 1,
       "type": "moment",
       "traits": ["Knowledge", "Tactic"],
-      "ability": "{cost}{instant}:{/cost} Shift a card in your grid.",
+      "ability": ["{cost}{instant}:{/cost} Shift a card in your grid."],
       "faction": "omniworks",
       "affiliation": 2,
       "artist": "NONE"
@@ -1093,7 +1190,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Commerce", "Influence"],
-      "ability": "{cost}{action}{action}:{/cost} Gain 4{shard} and draw 1 card.",
+      "ability": [
+        "{cost}{action}{action}:{/cost} Gain 4{shard} and draw 1 card."
+      ],
       "faction": "omniworks",
       "affiliation": 0,
       "artist": "Evan Simonet"
@@ -1102,12 +1201,14 @@
       "cardNumber": "148",
       "setCode": "PRCO",
       "name": "Infiltrate",
-      "cost": 1,
+      "cost": 0,
       "type": "moment",
       "traits": ["Subterfuge"],
-      "ability": "{cost}{reaction} As you begin discovering cards in a Council during a breach:{/cost} Discover +2 cards.",
+      "ability": [
+        "{cost}{reaction} As you begin discovering cards in a Council:{/cost} Discover +2 cards."
+      ],
       "faction": "omniworks",
-      "affiliation": 0,
+      "affiliation": 3,
       "artist": "Evan Simonet"
     },
     {
@@ -1117,7 +1218,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Influence"],
-      "ability": "{cost}{reaction} As a player engages a card in your grid:{/cost} That card gets +3{presence} until the engagement ends. {reminder}(\"Engage\" includes both confront and discover.){/reminder}",
+      "ability": [
+        "{cost}{reaction} As a player engages a card in your grid:{/cost} That card gets +3{presence} until the engagement ends. {reminder}(\"Engage\" includes both confront and discover.){/reminder}"
+      ],
       "faction": "remnants",
       "affiliation": 1,
       "artist": "NONE"
@@ -1129,7 +1232,9 @@
       "cost": 1,
       "type": "moment",
       "traits": ["Tactic"],
-      "ability": "{cost}{reaction} After you complete a breach on a player's district:{/cost} They gain 1{heat}.",
+      "ability": [
+        "{cost}{reaction} After you complete a breach on a player's district:{/cost} They gain 1{heat}."
+      ],
       "faction": "remnants",
       "affiliation": 1,
       "artist": "NONE"
@@ -1141,7 +1246,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Tactic"],
-      "ability": "{cost}{reaction} As a {encounter} or {discover} ability begins to resolve:{/cost} Cancel that resolution.",
+      "ability": [
+        "{cost}{reaction} As a {confront} or {discover} ability begins to resolve:{/cost} Cancel that resolution."
+      ],
       "faction": "remnants",
       "affiliation": 2,
       "artist": "NONE"
@@ -1153,7 +1260,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Subterfuge", "Tactic"],
-      "ability": "{cost}{reaction} After you complete a breach on a Commons:{/cost} Gain 3{shard}.",
+      "ability": [
+        "{cost}{reaction} After you complete a breach on a Commons:{/cost} Gain 3{shard}."
+      ],
       "faction": "remnants",
       "affiliation": 0,
       "artist": "Evan Simonet"
@@ -1165,7 +1274,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Subterfuge", "Tactic"],
-      "ability": "{cost}{action} Choose a player:{/cost} They lose 1{heat} and draw 1 card.",
+      "ability": [
+        "{cost}{action} Choose a player:{/cost} They lose 1{heat} and draw 1 card."
+      ],
       "faction": "remnants",
       "affiliation": 0,
       "artist": "Evan Simonet"
@@ -1177,7 +1288,9 @@
       "cost": 0,
       "type": "moment",
       "traits": ["Subterfuge", "Tactic"],
-      "ability": "{cost}{reaction} As you discover a moment in a Council or Commons:{/cost} Archive that moment. Draw 1 card.",
+      "ability": [
+        "{cost}{reaction} As you discover a moment in a Council or Commons:{/cost} Archive that moment. Draw 1 card."
+      ],
       "faction": "remnants",
       "affiliation": 4,
       "artist": "NONE"

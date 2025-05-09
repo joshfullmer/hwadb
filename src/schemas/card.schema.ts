@@ -5,7 +5,7 @@ export const BaseCardSchema = z.object({
   setCode: z.string(),
   name: z.string(),
   traits: z.array(z.string()),
-  ability: z.union([z.string(), z.array(z.string())]),
+  ability: z.array(z.string()),
   faction: z.union([
     z.literal("collective"),
     z.literal("oldAidalon"),
@@ -16,7 +16,7 @@ export const BaseCardSchema = z.object({
 });
 
 export const CollectionIconsSchema = z.array(
-  z.union([z.literal("card"), z.literal("shard")]),
+  z.union([z.literal("draw"), z.literal("shard")]),
 );
 
 export const SeekerCardSchema = BaseCardSchema.extend({
@@ -55,11 +55,14 @@ export const SourceCardSchema = BaseCardSchema.extend({
   collectionIcons: CollectionIconsSchema.optional(),
   type: z.literal("source"),
   cipher: z.string().optional(),
+  presence: z.number(),
+  affiliation: z.number(),
 });
 
 export const MomentCardSchema = BaseCardSchema.extend({
   cost: z.number(),
   type: z.literal("moment"),
+  affiliation: z.number(),
 });
 
 export const CardSchema = z.discriminatedUnion("type", [

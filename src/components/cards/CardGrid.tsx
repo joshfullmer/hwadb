@@ -19,8 +19,8 @@ export function CardGrid({ cards }: { cards: Card[] }) {
             <Image
               src={`/cards/${card.setCode}/${card.cardNumber}.webp`}
               alt=""
-              width="200"
-              height="200"
+              width="300"
+              height="300"
               className="z-10"
             />
           </Link>
