@@ -42,7 +42,7 @@ export default async function SetPage({
   );
 
   return (
-    <main>
+    <main className="flex flex-col gap-8">
       <CardPagination
         baseUrl={`/cards/${setCode}`}
         pageNumber={pageNumber}
