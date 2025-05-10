@@ -9,3 +9,7 @@ export const SetCodeRouteSchema = z.literal("PRCO");
 export const PaginationSearchParamsSchema = z.object({
   p: z.coerce.number().default(1),
 });
+
+export const SearchPageSearchParamsSchema = z.object({
+  q: z.string().nullable().default(null),
+});

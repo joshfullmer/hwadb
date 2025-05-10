@@ -32,6 +32,20 @@ export const getCard = ({
   return ok(card);
 };
 
+export const getCardsWithFilter = ({ query }: { query: string | null }) => {
+  const cardDataResult = loadCardData();
+
+  if (!cardDataResult.ok) return err(cardDataResult.error);
+
+  if (query == null) return ok(cardDataResult.data);
+
+  const cards = cardDataResult.data.filter((card) =>
+    card.name.toLowerCase().includes(query.toLowerCase()),
+  );
+
+  return ok(cards);
+};
+
 export const getPreviousAndNextCards = ({
   cardNumber,
   setCode,

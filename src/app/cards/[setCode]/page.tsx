@@ -6,10 +6,9 @@ import {
 } from "@/schemas/route.schema";
 import { CardPagination } from "@/components/cards/CardPagination";
 import { CardGrid } from "@/components/cards/CardGrid";
+import { SearchParams } from "@/types/app";
 
 const ITEMS_PER_PAGE = 16;
-
-type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
 
 export default async function SetPage({
   params: paramsPromise,

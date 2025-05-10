@@ -28,15 +28,27 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen min-h-screen flex flex-col`}
       >
-        <nav className="max-w-9/10 w-full mx-auto py-8 flex gap-4">
-          <Link href="/">HWADB</Link>
-          {/* <Link href="/decks">My Decks</Link> */}
-          <Link href="/cards">Cards</Link>
-          {/* <Link href="/signin" className="ml-auto"> */}
+        <nav className="max-w-9/10 w-full mx-auto py-8 flex gap-8 items-center">
+          <Link href="/" className="text-2xl font-bold">
+            HWADB
+          </Link>
+          {/* <Link href="/decks" className="text-lg"> */}
+          {/*   My Decks */}
+          {/* </Link> */}
+          <Link href="/cards" className="text-lg">
+            Cards
+          </Link>
+          {/* <Link href="/signin" className="text-lg ml-auto"> */}
           {/*   Sign in */}
           {/* </Link> */}
         </nav>
         {children}
+
+        <footer className="border-t border-slate-700 w-full mt-auto">
+          <section className="max-w-9/10 w-full mx-auto p-8">
+            Footer placeholder
+          </section>
+        </footer>
       </body>
     </html>
   );
